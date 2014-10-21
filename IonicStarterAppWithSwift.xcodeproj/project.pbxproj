@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C6D9461A19F67CC30019AF8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D9461919F67CC30019AF8A /* AppDelegate.swift */; };
+		C6D9461C19F67CC30019AF8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D9461B19F67CC30019AF8A /* ViewController.swift */; };
+		C6D9461F19F67CC30019AF8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6D9461D19F67CC30019AF8A /* Main.storyboard */; };
+		C6D9462119F67CC30019AF8A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6D9462019F67CC30019AF8A /* Images.xcassets */; };
+		C6D9462419F67CC30019AF8A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6D9462219F67CC30019AF8A /* LaunchScreen.xib */; };
+		C6D9463019F67CC40019AF8A /* IonicStarterAppWithSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D9462F19F67CC40019AF8A /* IonicStarterAppWithSwiftTests.swift */; };
+		C6D9463A19F67DC50019AF8A /* webContent in Resources */ = {isa = PBXBuildFile; fileRef = C6D9463919F67DC50019AF8A /* webContent */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C6D9462A19F67CC40019AF8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C6D9460C19F67CC30019AF8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C6D9461319F67CC30019AF8A;
+			remoteInfo = IonicStarterAppWithSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C6D9461419F67CC30019AF8A /* IonicStarterAppWithSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IonicStarterAppWithSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6D9461819F67CC30019AF8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6D9461919F67CC30019AF8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C6D9461B19F67CC30019AF8A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C6D9461E19F67CC30019AF8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C6D9462019F67CC30019AF8A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C6D9462319F67CC30019AF8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		C6D9462919F67CC40019AF8A /* IonicStarterAppWithSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IonicStarterAppWithSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6D9462E19F67CC40019AF8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6D9462F19F67CC40019AF8A /* IonicStarterAppWithSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IonicStarterAppWithSwiftTests.swift; sourceTree = "<group>"; };
+		C6D9463919F67DC50019AF8A /* webContent */ = {isa = PBXFileReference; lastKnownFileType = folder; path = webContent; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C6D9461119F67CC30019AF8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6D9462619F67CC40019AF8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C6D9460B19F67CC30019AF8A = {
+			isa = PBXGroup;
+			children = (
+				C6D9463919F67DC50019AF8A /* webContent */,
+				C6D9461619F67CC30019AF8A /* IonicStarterAppWithSwift */,
+				C6D9462C19F67CC40019AF8A /* IonicStarterAppWithSwiftTests */,
+				C6D9461519F67CC30019AF8A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C6D9461519F67CC30019AF8A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C6D9461419F67CC30019AF8A /* IonicStarterAppWithSwift.app */,
+				C6D9462919F67CC40019AF8A /* IonicStarterAppWithSwiftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6D9461619F67CC30019AF8A /* IonicStarterAppWithSwift */ = {
+			isa = PBXGroup;
+			children = (
+				C6D9461919F67CC30019AF8A /* AppDelegate.swift */,
+				C6D9461B19F67CC30019AF8A /* ViewController.swift */,
+				C6D9461D19F67CC30019AF8A /* Main.storyboard */,
+				C6D9462019F67CC30019AF8A /* Images.xcassets */,
+				C6D9462219F67CC30019AF8A /* LaunchScreen.xib */,
+				C6D9461719F67CC30019AF8A /* Supporting Files */,
+			);
+			path = IonicStarterAppWithSwift;
+			sourceTree = "<group>";
+		};
+		C6D9461719F67CC30019AF8A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C6D9461819F67CC30019AF8A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C6D9462C19F67CC40019AF8A /* IonicStarterAppWithSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				C6D9462F19F67CC40019AF8A /* IonicStarterAppWithSwiftTests.swift */,
+				C6D9462D19F67CC40019AF8A /* Supporting Files */,
+			);
+			path = IonicStarterAppWithSwiftTests;
+			sourceTree = "<group>";
+		};
+		C6D9462D19F67CC40019AF8A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C6D9462E19F67CC40019AF8A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C6D9461319F67CC30019AF8A /* IonicStarterAppWithSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6D9463319F67CC40019AF8A /* Build configuration list for PBXNativeTarget "IonicStarterAppWithSwift" */;
+			buildPhases = (
+				C6D9461019F67CC30019AF8A /* Sources */,
+				C6D9461119F67CC30019AF8A /* Frameworks */,
+				C6D9461219F67CC30019AF8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IonicStarterAppWithSwift;
+			productName = IonicStarterAppWithSwift;
+			productReference = C6D9461419F67CC30019AF8A /* IonicStarterAppWithSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C6D9462819F67CC40019AF8A /* IonicStarterAppWithSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6D9463619F67CC40019AF8A /* Build configuration list for PBXNativeTarget "IonicStarterAppWithSwiftTests" */;
+			buildPhases = (
+				C6D9462519F67CC40019AF8A /* Sources */,
+				C6D9462619F67CC40019AF8A /* Frameworks */,
+				C6D9462719F67CC40019AF8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C6D9462B19F67CC40019AF8A /* PBXTargetDependency */,
+			);
+			name = IonicStarterAppWithSwiftTests;
+			productName = IonicStarterAppWithSwiftTests;
+			productReference = C6D9462919F67CC40019AF8A /* IonicStarterAppWithSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C6D9460C19F67CC30019AF8A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Bhuman Soni";
+				TargetAttributes = {
+					C6D9461319F67CC30019AF8A = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					C6D9462819F67CC40019AF8A = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = C6D9461319F67CC30019AF8A;
+					};
+				};
+			};
+			buildConfigurationList = C6D9460F19F67CC30019AF8A /* Build configuration list for PBXProject "IonicStarterAppWithSwift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C6D9460B19F67CC30019AF8A;
+			productRefGroup = C6D9461519F67CC30019AF8A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C6D9461319F67CC30019AF8A /* IonicStarterAppWithSwift */,
+				C6D9462819F67CC40019AF8A /* IonicStarterAppWithSwiftTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C6D9461219F67CC30019AF8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6D9461F19F67CC30019AF8A /* Main.storyboard in Resources */,
+				C6D9462419F67CC30019AF8A /* LaunchScreen.xib in Resources */,
+				C6D9462119F67CC30019AF8A /* Images.xcassets in Resources */,
+				C6D9463A19F67DC50019AF8A /* webContent in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6D9462719F67CC40019AF8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C6D9461019F67CC30019AF8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6D9461C19F67CC30019AF8A /* ViewController.swift in Sources */,
+				C6D9461A19F67CC30019AF8A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6D9462519F67CC40019AF8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6D9463019F67CC40019AF8A /* IonicStarterAppWithSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C6D9462B19F67CC40019AF8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C6D9461319F67CC30019AF8A /* IonicStarterAppWithSwift */;
+			targetProxy = C6D9462A19F67CC40019AF8A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C6D9461D19F67CC30019AF8A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6D9461E19F67CC30019AF8A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C6D9462219F67CC30019AF8A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6D9462319F67CC30019AF8A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C6D9463119F67CC40019AF8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C6D9463219F67CC40019AF8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C6D9463419F67CC40019AF8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = IonicStarterAppWithSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C6D9463519F67CC40019AF8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = IonicStarterAppWithSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C6D9463719F67CC40019AF8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = IonicStarterAppWithSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IonicStarterAppWithSwift.app/IonicStarterAppWithSwift";
+			};
+			name = Debug;
+		};
+		C6D9463819F67CC40019AF8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = IonicStarterAppWithSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IonicStarterAppWithSwift.app/IonicStarterAppWithSwift";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C6D9460F19F67CC30019AF8A /* Build configuration list for PBXProject "IonicStarterAppWithSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6D9463119F67CC40019AF8A /* Debug */,
+				C6D9463219F67CC40019AF8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6D9463319F67CC40019AF8A /* Build configuration list for PBXNativeTarget "IonicStarterAppWithSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6D9463419F67CC40019AF8A /* Debug */,
+				C6D9463519F67CC40019AF8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C6D9463619F67CC40019AF8A /* Build configuration list for PBXNativeTarget "IonicStarterAppWithSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6D9463719F67CC40019AF8A /* Debug */,
+				C6D9463819F67CC40019AF8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C6D9460C19F67CC30019AF8A /* Project object */;
+}
