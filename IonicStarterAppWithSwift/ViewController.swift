@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         let path = NSBundle.mainBundle().pathForResource("index", ofType: "html", inDirectory:"webContent");
         let url = NSURL(string: path!);
-        let request = NSURLRequest(URL: url);
+        let request = NSURLRequest(URL: url!);
         webView.loadRequest(request);
     }
 
