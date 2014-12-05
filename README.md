@@ -1,8 +1,6 @@
 IonicStarterAppWithSwift
 ========================
-A starter xcode project with the contents of a web page powered by the [Ionic framework]. The intent is for this 
-to serve as a starting point, if you are building a native iOS app without using [Cordova]. Should you want to how 
-this repo came to be i.e. the idea, motivation etc you can have a read about it in my [blog post].
+An xcode project that displays HTML contents in a webView where the web content is powered by the [Ionic framework]. This purpose of this repo is to serve as a starting point for anyone who wants to build a 'native' HTML5 based iOS app using the Ionic framework without using [Cordova]. Should you want to how this repo came to be i.e. the idea, motivation etc you can have a read about it in my [blog post].
 
 
 
