@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let path = NSBundle.mainBundle().pathForResource("index", ofType: "html", inDirectory:"webContent");
+        let path = NSBundle.mainBundle().pathForResource("index", ofType: "html", inDirectory:"www");
         let url = NSURL(string: path!);
         let request = NSURLRequest(URL: url!);
         webView.loadRequest(request);
