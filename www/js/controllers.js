@@ -1,6 +1,15 @@
 angular.module('starter.controllers', [])
 
 .controller('DashCtrl', function($scope) {
+	$scope.scheduleNotifications = function() {
+   		window.location="setNotifications";
+  	}
+  	$scope.cancelAllNotifications = function() {
+  		window.location="cancelAllNotifications";
+  	}
+  	$scope.printNotifications = function() {
+  		window.location="printNotificationsToConsole";
+  	}
 })
 
 .controller('FriendsCtrl', function($scope, Friends) {
