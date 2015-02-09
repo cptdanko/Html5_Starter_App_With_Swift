@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		55DBC0AE1A88717B007B9BFF /* www in Resources */ = {isa = PBXBuildFile; fileRef = 55DBC0AD1A88717B007B9BFF /* www */; };
+		55DBC0B01A88822E007B9BFF /* www in Resources */ = {isa = PBXBuildFile; fileRef = 55DBC0AF1A88822E007B9BFF /* www */; };
 		C6D9461A19F67CC30019AF8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D9461919F67CC30019AF8A /* AppDelegate.swift */; };
 		C6D9461C19F67CC30019AF8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D9461B19F67CC30019AF8A /* ViewController.swift */; };
 		C6D9461F19F67CC30019AF8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6D9461D19F67CC30019AF8A /* Main.storyboard */; };
@@ -27,7 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		55DBC0AD1A88717B007B9BFF /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
+		55DBC0AF1A88822E007B9BFF /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
 		C6D9461419F67CC30019AF8A /* IonicStarterAppWithSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IonicStarterAppWithSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6D9461819F67CC30019AF8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6D9461919F67CC30019AF8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -61,7 +61,7 @@
 		C6D9460B19F67CC30019AF8A = {
 			isa = PBXGroup;
 			children = (
-				55DBC0AD1A88717B007B9BFF /* www */,
+				55DBC0AF1A88822E007B9BFF /* www */,
 				C6D9461619F67CC30019AF8A /* IonicStarterAppWithSwift */,
 				C6D9462C19F67CC40019AF8A /* IonicStarterAppWithSwiftTests */,
 				C6D9461519F67CC30019AF8A /* Products */,
@@ -198,7 +198,7 @@
 				C6D9461F19F67CC30019AF8A /* Main.storyboard in Resources */,
 				C6D9462419F67CC30019AF8A /* LaunchScreen.xib in Resources */,
 				C6D9462119F67CC30019AF8A /* Images.xcassets in Resources */,
-				55DBC0AE1A88717B007B9BFF /* www in Resources */,
+				55DBC0B01A88822E007B9BFF /* www in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
