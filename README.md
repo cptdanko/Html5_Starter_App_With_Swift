@@ -4,12 +4,13 @@ An xcode project that displays HTML contents in a webView where the web content 
 
 Some time ago, I added a new branch to this repositiory called Notifications, it contains some code to schedule, cancel and print(to console) local notifications from the html buttons in a UIWebView. The details of that that branch are explained [here].
 
+If you are going to clone this project or use it in anyway, it would be great if you can look at this [issue]. Bascially what the issue asks is, if you have any suggestions on how I can improve this project template or any new features that I can add to this, please let me know, and I will see what I can do to accomplish it.
 
 
 
 
 
-
+[issue]: https://github.com/cptdanko/IonicStarterAppWithSwift/issues/2
 [here]: http://captaindanko.blogspot.com.au/2015/02/local-notifications-in-ios7-compliant.html
 [Ionic framework]:http://ionicframework.com/
 [Cordova]: http://cordova.apache.org/
