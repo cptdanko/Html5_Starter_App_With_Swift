@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>61282F6D-C21F-4B24-89A3-BD0E4E04ED19</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Html5iOSProjectTemplate</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>6FB879F36AF6696B3FB8AB51163024257C3556DE</key>
+		<string>https://github.com/cptdanko/Html5StarterAppWithSwift.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Html5iOSProjectTemplate.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>6FB879F36AF6696B3FB8AB51163024257C3556DE</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/cptdanko/Html5StarterAppWithSwift.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>6FB879F36AF6696B3FB8AB51163024257C3556DE</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6FB879F36AF6696B3FB8AB51163024257C3556DE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Html5StarterAppWithSwift</string>
+		</dict>
+	</array>
+</dict>
+</plist>

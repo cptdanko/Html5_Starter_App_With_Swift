@@ -1,17 +1,27 @@
-IonicStarterAppWithSwift
+HTML5 starter app with Swift
 ========================
-An xcode project that displays HTML contents in a webView where the web content is powered by the [Ionic framework]. This purpose of this repo is to serve as a starting point for anyone who wants to build a 'native' HTML5 based iOS app using the Ionic framework without using [Cordova]. Should you want to how this repo came to be i.e. the idea, motivation etc you can have a read about it in my [blog post].
+This is an [Xcode] project that builds an [iOS] app such that all the [UI] for the app is powered by HTML elements that communicate with a [Swift] backend. 
+This purpose of this repo is to serve as a starting point for anyone who wants to build a native iOS app such that the app UI is powered by HTML/Javascript/CSS. To put that into perspective, imagine having an [iOS] app in which you can power the UI with HTML, CSS, a Javascript framework such as [AngularJS] and at the same time the app can use native [iOS] features such as [Core Data], etc. Sounds awesome right? well this starter app can help you achieve exactly that.
 
-Some time ago, I added a new branch to this repositiory called Notifications, it contains some code to schedule, cancel and print(to console) local notifications from the html buttons in a UIWebView. The details of that that branch are explained [here].
+For this project the HTML contents are powered by the [Ionic framework] and they are stored in the "www" directory.
 
-If you are going to clone this project or use it in anyway, it would be great if you can look at this [issue]. Bascially what the issue asks is, if you have any suggestions on how I can improve this project template or any new features that I can add to this, please let me know, and I will see what I can do to accomplish it.
+This repo was orginally called [IonicStarterAppWithSwift] and should you want to how this repo came to be i.e. the idea, motivation etc you can have a read about it in my [blog post]. Anyway I have just made a few simple yet significant changes to this project
 
+# What changes?
+- **A More appropriate Name**: When I first created the project I named it based on the [HTML5] framework that I was using i.e. [Ionic framework], I have since realised that this project is framework agnostic. What? what I mean is, you can pretty much use any framework to power the HTML contents for the iOS app created with this project. So the name [HTML5] starter app with Swift seemed more appropriate. I first realised that this Xcode project can be used with any HTML5 framework, when I got a [message], about how using this project helped get a rejected(iOS app store) PhoneGap app, pass the app store review process. The rejected [PhoneGap] app was actually built using [JQuery mobile], and on realising that, I was like hmmm, any HTML5 framework can be used for this, huh!
+- **Reduce complexity**: Originally for this repo, I had a seperate branch to show how to schedule local notifications i.e. using [UILocalNotifications]. I realised that that's not very efficient, so...since this project shows a tab based app and one of the tabs provides the feature to schedule local notifications. This [post], describes the solution for how the app schedules local notifications.
 
-
-
-
-[issue]: https://github.com/cptdanko/IonicStarterAppWithSwift/issues/2
-[here]: http://captaindanko.blogspot.com.au/2015/02/local-notifications-in-ios7-compliant.html
+[Core Data]: https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/CoreData/cdProgrammingGuide.html
+[AngularJS]: https://angularjs.org/
+[HTML5]:https://en.wikipedia.org/wiki/HTML5
+[UI]:https://en.wikipedia.org/wiki/User_interface
+[JQuery mobile]:https://jquerymobile.com/
+[PhoneGap]:http://phonegap.com/
+[message]: http://captaindanko.blogspot.com.au/2015/01/struggling-to-fit-rejected-phonegap.html
+[UILocalNotifications]:https://developer.apple.com/library/ios/documentation/iPhone/Reference/UILocalNotification_Class/
+[iOS]: https://en.wikipedia.org/wiki/IOS
+[Swift]: https://developer.apple.com/swift/
+[Xcode]: https://developer.apple.com/xcode/
+[IonicStarterAppWithSwift]: https://github.com/cptdanko/IonicStarterAppWithSwift
 [Ionic framework]:http://ionicframework.com/
-[Cordova]: http://cordova.apache.org/
 [blog post]: http://captaindanko.blogspot.com.au/2014/10/xcode-starter-project-with-ionic-html5.html
