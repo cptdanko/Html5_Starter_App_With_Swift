@@ -25,3 +25,4 @@ This repo was orginally called [IonicStarterAppWithSwift] and should you want to
 [IonicStarterAppWithSwift]: https://github.com/cptdanko/IonicStarterAppWithSwift
 [Ionic framework]:http://ionicframework.com/
 [blog post]: http://captaindanko.blogspot.com.au/2014/10/xcode-starter-project-with-ionic-html5.html
+[post]: http://captaindanko.blogspot.com.au/2015/02/local-notifications-in-ios7-compliant.html
