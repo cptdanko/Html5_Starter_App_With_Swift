@@ -5,8 +5,8 @@ This purpose of this repo is to serve as a starting point for anyone who wants t
 
 For this project the HTML contents are powered by the [Ionic framework] and they are stored in the "www" directory.
 
-# What sort of iOS app does this project show?
-This Xcode project will build a tab based application that will have the following tabs
+# What iOS app does this project show?
+When you build this project in Xcode, you will see a tab based application which will have the following tabs
 - HTML content: this tab just shows the some HTML elements such as labels and icons obtained from the Ionic Framework. 
 - iOS Notifications: this tab has HTML buttons that can trigger, scheduling, printing(to Xcode console) and cancelling [local notifications].
 
