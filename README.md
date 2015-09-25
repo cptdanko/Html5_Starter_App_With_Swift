@@ -30,8 +30,8 @@ This repo was orginally called [IonicStarterAppWithSwift] and should you want to
 - **Reduce complexity**: Originally for this repo, I had a seperate branch to show how to schedule local notifications i.e. using [UILocalNotifications]. I realised that that's not very efficient...so this project shows a tab based app and one of the tabs provides the feature to schedule local notifications. This [post], describes the solution for how the app schedules [local notifications].
 
 [YouTube]:https://www.youtube.com/watch?v=NATL8s3949g
-[app website]: www.mydaytodos.com
-[My Day Todos]: www.mydaytodos.com
+[app website]: http://www.mydaytodos.com
+[My Day Todos]: http://www.mydaytodos.com
 [app store]: https://itunes.apple.com/app/my-day-todos-todo-list-alarms/id1020072048
 [Making an iOS app like making a Java web app]:http://captaindanko.blogspot.com.au/2015/06/making-ios-app-like-making-java-web-app.html
 [chart]:https://en.wikipedia.org/wiki/Chart
