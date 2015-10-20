@@ -1,6 +1,6 @@
 Html5 starter app with Swift
 ========================
-This is an [Xcode] project that builds an [iOS] app such that all the [UI] for the app is powered by HTML elements that communicate with a [Swift] backend. 
+This is an [Xcode] project that builds an [iOS] app such that all the [UI] for the app is powered by HTML elements that communicate with a [Swift] backend.
 
 This project came to be when I was working on my first iOS app; [My Day Todos], which is a native iOS app with UI powered by Html5. You can down My Day Todos from the [app store] or if you want to know more about it? or see how it works you can checkout the [app website] which provides a preview of the app as well as links to [YouTube] video tutorials of how to use the app.
 
@@ -10,10 +10,10 @@ For this project the HTML contents are powered by the [Ionic framework] and they
 
 # What iOS app does this project show?
 When you build this project in Xcode, you will see a tab based application which will have the following tabs
-- HTML content: this tab just shows the some HTML elements such as labels and icons obtained from the Ionic Framework. 
+- HTML content: this tab just shows the some HTML elements such as labels and icons obtained from the Ionic Framework.
 - iOS Notifications: this tab has HTML buttons that can schedule, print(to Xcode console) and cancel [local notifications].
 
-To be added (**by 15th Oct 2015**):
+To be added (**soon**):
 - Visualisation: I will be adding this tab in couple of weeks. This tab will showcase sending data from the Swift backend and visualising it in the HTML based front-end. It will be a [chart] based visualisation using one of the many Javascript based charting libraries.
 
 #Project goal
