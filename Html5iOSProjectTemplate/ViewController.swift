@@ -34,13 +34,13 @@ class ViewController: UIViewController, UIWebViewDelegate{
         }*/
     }
     private func printNotifications(){
-        for n:AnyObject in UIApplication.sharedApplication().scheduledLocalNotifications {
+        for n:AnyObject in UIApplication.sharedApplication().scheduledLocalNotifications! {
             let not:UILocalNotification = n as! UILocalNotification
-            println("alertBody:\(not.alertBody!)")
+            print("alertBody:\(not.alertBody!)")
         }
     }
     private func setTestNotifications(){
-        var date = NSDate()
+        let date = NSDate()
         scheduleNotifications(date.dateByAddingTimeInterval(100), message: "1")
         scheduleNotifications(date.dateByAddingTimeInterval(10), message: "2")
         scheduleNotifications(date.dateByAddingTimeInterval(20), message: "3")
@@ -61,9 +61,7 @@ class ViewController: UIViewController, UIWebViewDelegate{
         UIApplication.sharedApplication().scheduleLocalNotification(notification)
     }
     func webView(webView: UIWebView, shouldStartLoadWithRequest request: NSURLRequest, navigationType: UIWebViewNavigationType) -> Bool {
-        let appDel = UIApplication.sharedApplication().delegate as! AppDelegate
-        let path = request.URL!.path?.lastPathComponent
-        println("\(path!)")
+        let path = request.URL!.lastPathComponent
         if path == "setNotifications" {
             setTestNotifications()
             return false
