@@ -11,9 +11,14 @@ angular.module('starter.controllers', [])
   		window.location="printNotificationsToConsole";
   	}
 })
-.controller('ChartsCtrl', function($scope){
-
+.controller('ChartsCtrl', function($scope,TestData){
+	//http://gionkunz.github.io/chartist-js/
+	var data = TestData.forCharts();
+	var options = {
+	  width: 300,
+	  height: 200
+	};
+	new Chartist.Bar('.ct-chart', data, options);
 })
-.controller('HtmlContentCtrl', function($scope, Friends) {
-  $scope.friends = Friends.all();
+.controller('HtmlContentCtrl', function($scope) {
 });

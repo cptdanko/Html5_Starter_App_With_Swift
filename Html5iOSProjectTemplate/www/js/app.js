@@ -51,11 +51,20 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     .state('tab.htmlContent', {
       url: '/htmlContent',
       views: {
-        'tab-friends': {
+        'tab-htmlContent': {
           templateUrl: 'templates/htmlContent.html',
           controller: 'HtmlContentCtrl'
         }
       }
+    })
+    .state('tab.charts',{
+        url: '/charts',
+        views: {
+            'tab-charts': {
+                templateUrl: 'templates/charts.html',
+                controller: 'ChartsCtrl'
+            }
+        }
     })
 
   // if none of the above states are matched, use this as the fallback
