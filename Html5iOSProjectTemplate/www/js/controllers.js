@@ -1,6 +1,6 @@
 angular.module('starter.controllers', [])
 
-.controller('DashCtrl', function($scope) {
+.controller('NotificationsCtrl', function($scope) {
 	$scope.scheduleNotifications = function() {
    		window.location="setNotifications";
   	}
@@ -11,14 +11,9 @@ angular.module('starter.controllers', [])
   		window.location="printNotificationsToConsole";
   	}
 })
+.controller('ChartsCtrl', function($scope){
 
-.controller('FriendsCtrl', function($scope, Friends) {
+})
+.controller('HtmlContentCtrl', function($scope, Friends) {
   $scope.friends = Friends.all();
-})
-
-.controller('FriendDetailCtrl', function($scope, $stateParams, Friends) {
-  $scope.friend = Friends.get($stateParams.friendId);
-})
-
-.controller('AccountCtrl', function($scope) {
 });
