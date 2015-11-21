@@ -12,7 +12,7 @@ For this project the HTML contents are powered by the [Ionic framework] and they
 When you build this project in Xcode, you will see a tab based application which will have the following tabs
 - HTML content: this tab just shows the some HTML elements such as labels and icons obtained from the Ionic Framework.
 - iOS Notifications: this tab has HTML buttons that can schedule, print(to Xcode console) and cancel [local notifications].
-- Html5 Charts: The purpose of this tab is to showcase how to visualise data using an Html5 charting framework in a native iOS app....or simply put, how to draw Html5 based charts in a native iOS app. The charting library used for visualisation here is [chartist]. I got to know about it from this excellent SitePoint article on [15 JS libraries for Creating Beautiful Charts]. 
+- Html5 Charts: this tab aims to demonstrate how to visualise data using an Html5 charting framework in a native iOS app....or simply put, how to draw Html5 based charts in a native iOS app. The charting library used for visualisation here is [Chartist]. I got to know about it from this excellent SitePoint article on [15 JS libraries for Creating Beautiful Charts]. 
 
 #Project goal
 My objective here is to provide an example of "How-to" do something, for this sort of app. If you would like to see an example on how to do something, then please let me know and I will see what I can do to include that. Also if you think you can add something to this repo, then by all means fork this repo, add your change and create a pull request.
@@ -28,7 +28,7 @@ This repo was orginally called [IonicStarterAppWithSwift] and should you want to
 - **Reduce complexity**: Originally for this repo, I had a seperate branch to show how to schedule local notifications i.e. using [UILocalNotifications]. I realised that that's not very efficient...so this project shows a tab based app and one of the tabs provides the feature to schedule local notifications. This [post], describes the solution for how the app schedules [local notifications].
 
 [15 JS libraries for Creating Beautiful Charts]:http://www.sitepoint.com/15-best-javascript-charting-libraries/
-[chartist]:http://gionkunz.github.io/chartist-js/
+[Chartist]:http://gionkunz.github.io/chartist-js/
 [YouTube]:https://www.youtube.com/watch?v=NATL8s3949g
 [app website]: http://www.mydaytodos.com
 [My Day Todos]: http://www.mydaytodos.com
