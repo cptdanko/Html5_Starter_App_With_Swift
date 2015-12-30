@@ -13,7 +13,8 @@ When you build this project in Xcode, you will see a tab based application which
 - HTML content: this tab just shows the some HTML elements such as labels and icons obtained from the Ionic Framework.
 - iOS Notifications: this tab has HTML buttons that can schedule, print(to Xcode console) and cancel [local notifications].
 - Html5 Charts: this tab aims to demonstrate how to visualise data using an Html5 charting framework in a native iOS app....or simply put, how to draw Html5 based charts in a native iOS app. The charting library used for visualisation here is [Chartist]. I got to know about it from this excellent SitePoint article on [15 JS libraries for Creating Beautiful Charts]. 
-### To be added....
+
+### To be added...
 - Fetching data from a RESTful endpoint natively i.e. using [NSURLSession]
 - A [Today extension]: Today extension are widgets on the iOS pull-down menu and some sample code for that will be added to this repo to demonstrate how it works
 
