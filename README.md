@@ -43,7 +43,7 @@ This repo was orginally called [IonicStarterAppWithSwift] and should you want to
 [app store]: https://itunes.apple.com/app/my-day-todos-todo-list-alarms/id1020072048
 [Making an iOS app like making a Java web app]:http://captaindanko.blogspot.com.au/2015/06/making-ios-app-like-making-java-web-app.html
 [chart]:https://en.wikipedia.org/wiki/Chart
-[Core Data]: https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/CoreData/cdProgrammingGuide.html
+[Core Data]: https://en.wikipedia.org/wiki/Core_Data
 [AngularJS]: https://angularjs.org/
 [HTML5]:https://en.wikipedia.org/wiki/HTML5
 [UI]:https://en.wikipedia.org/wiki/User_interface
