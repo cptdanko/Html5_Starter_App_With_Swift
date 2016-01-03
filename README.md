@@ -2,7 +2,7 @@ Html5 starter app with Swift
 ========================
 This is an [Xcode] project that builds an [iOS] app such that all the [UI] for the app is powered by HTML elements that communicate with a [Swift] backend.
 
-This project came to be when I was working on my first iOS app; [My Day Todos], which is a native iOS app with UI powered by Html5. You can down My Day Todos from the [app store] or if you want to know more about it? or see how it works you can checkout the [app website] which provides a preview of the app as well as links to [YouTube] video tutorials of how to use the app.
+This project came to be when I was working on my first iOS app; [My Day Todos] and [My Day Todos Lite](free) version, which are native iOS apps with UI powered by Html5. You can down My Day Todos from the [app store] or if you want to know more about it? or see how it works you can checkout the [app website] which provides a preview of the app as well as links to [YouTube] video tutorials of how to use the app.
 
 This purpose of this repo is to serve as a starting point for anyone who wants to build a native iOS app such that the app UI is powered by HTML/Javascript/CSS. To put that into perspective, imagine having an iOS app in which you can power the UI with HTML, CSS, a Javascript framework such as [AngularJS] and at the same time the app can use native iOS features such as [Core Data], etc. Sounds awesome right? well this starter app i.e. Xcode project template can help you achieve exactly that.
 
@@ -32,13 +32,14 @@ This repo was orginally called [IonicStarterAppWithSwift] and should you want to
 - **A More appropriate Name**: When I first created the project I named it based on the [HTML5] framework that I was using i.e. [Ionic framework], I have since realised that this project is framework agnostic. What? what I mean is, you can pretty much use any framework to power the HTML contents for the iOS app created with this project. So the name [HTML5] starter app with Swift seemed more appropriate. I first realised that this Xcode project can be used with any HTML5 framework, when I got a [message], about how using this project helped get a rejected(iOS app store) PhoneGap app, pass the app store review process. The rejected [PhoneGap] app was actually built using [JQuery mobile], and on realising that, I was like hmmm, any HTML5 framework can be used for this, huh!
 - **Reduce complexity**: Originally for this repo, I had a seperate branch to show how to schedule local notifications i.e. using [UILocalNotifications]. I realised that that's not very efficient...so this project shows a tab based app and one of the tabs provides the feature to schedule local notifications. This [post], describes the solution for how the app schedules [local notifications].
 
+[My Day Todos Lite]: https://itunes.apple.com/app/my-day-todos-lite-todolist/id1066820078
 [Today extension]: https://developer.apple.com/library/ios/documentation/General/Conceptual/ExtensibilityPG/NotificationCenter.html
 [NSURLSession]:https://developer.apple.com/library/ios/documentation/Foundation/Reference/NSURLSession_class/
 [15 JS libraries for Creating Beautiful Charts]:http://www.sitepoint.com/15-best-javascript-charting-libraries/
 [Chartist]:http://gionkunz.github.io/chartist-js/
 [YouTube]:https://www.youtube.com/watch?v=NATL8s3949g
 [app website]: http://www.mydaytodos.com
-[My Day Todos]: http://www.mydaytodos.com
+[My Day Todos]: https://itunes.apple.com/app/my-day-todos-todolist-that/id1020072048
 [app store]: https://itunes.apple.com/app/my-day-todos-todo-list-alarms/id1020072048
 [Making an iOS app like making a Java web app]:http://captaindanko.blogspot.com.au/2015/06/making-ios-app-like-making-java-web-app.html
 [chart]:https://en.wikipedia.org/wiki/Chart
