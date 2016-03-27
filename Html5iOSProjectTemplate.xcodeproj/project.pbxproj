@@ -15,6 +15,11 @@
 		553B76D01B354FAF006B286D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 553B76CE1B354FAF006B286D /* LaunchScreen.xib */; };
 		553B76DC1B354FAF006B286D /* Html5iOSProjectTemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553B76DB1B354FAF006B286D /* Html5iOSProjectTemplateTests.swift */; };
 		553B77171B3550FA006B286D /* www in Resources */ = {isa = PBXBuildFile; fileRef = 553B77161B3550FA006B286D /* www */; };
+		557A0DCC1CA73C4100B0D60B /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 557A0DCB1CA73C4100B0D60B /* NotificationCenter.framework */; };
+		557A0DCF1CA73C4100B0D60B /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A0DCE1CA73C4100B0D60B /* TodayViewController.swift */; };
+		557A0DD21CA73C4100B0D60B /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 557A0DD01CA73C4100B0D60B /* MainInterface.storyboard */; };
+		557A0DD61CA73C4100B0D60B /* TodayWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 557A0DC91CA73C4100B0D60B /* TodayWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		557A0DDB1CA73C8D00B0D60B /* www in Resources */ = {isa = PBXBuildFile; fileRef = 553B77161B3550FA006B286D /* www */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,7 +30,28 @@
 			remoteGlobalIDString = 553B76BC1B354FAF006B286D;
 			remoteInfo = Html5iOSProjectTemplate;
 		};
+		557A0DD41CA73C4100B0D60B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 553B76B51B354FAE006B286D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 557A0DC81CA73C4100B0D60B;
+			remoteInfo = TodayWidget;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		557A0DDA1CA73C4100B0D60B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				557A0DD61CA73C4100B0D60B /* TodayWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		553B76BD1B354FAF006B286D /* Html5iOSProjectTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Html5iOSProjectTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +66,11 @@
 		553B76DA1B354FAF006B286D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		553B76DB1B354FAF006B286D /* Html5iOSProjectTemplateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Html5iOSProjectTemplateTests.swift; sourceTree = "<group>"; };
 		553B77161B3550FA006B286D /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = Html5iOSProjectTemplate/www; sourceTree = "<group>"; };
+		557A0DC91CA73C4100B0D60B /* TodayWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TodayWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		557A0DCB1CA73C4100B0D60B /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		557A0DCE1CA73C4100B0D60B /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		557A0DD11CA73C4100B0D60B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		557A0DD31CA73C4100B0D60B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +88,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		557A0DC61CA73C4100B0D60B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				557A0DCC1CA73C4100B0D60B /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -66,6 +105,8 @@
 				553B77161B3550FA006B286D /* www */,
 				553B76BF1B354FAF006B286D /* Html5iOSProjectTemplate */,
 				553B76D81B354FAF006B286D /* Html5iOSProjectTemplateTests */,
+				557A0DCD1CA73C4100B0D60B /* TodayWidget */,
+				557A0DCA1CA73C4100B0D60B /* Frameworks */,
 				553B76BE1B354FAF006B286D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -75,6 +116,7 @@
 			children = (
 				553B76BD1B354FAF006B286D /* Html5iOSProjectTemplate.app */,
 				553B76D51B354FAF006B286D /* Html5iOSProjectTemplateTests.xctest */,
+				557A0DC91CA73C4100B0D60B /* TodayWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,6 +160,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		557A0DCA1CA73C4100B0D60B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				557A0DCB1CA73C4100B0D60B /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		557A0DCD1CA73C4100B0D60B /* TodayWidget */ = {
+			isa = PBXGroup;
+			children = (
+				557A0DCE1CA73C4100B0D60B /* TodayViewController.swift */,
+				557A0DD01CA73C4100B0D60B /* MainInterface.storyboard */,
+				557A0DD31CA73C4100B0D60B /* Info.plist */,
+			);
+			path = TodayWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -128,10 +188,12 @@
 				553B76B91B354FAF006B286D /* Sources */,
 				553B76BA1B354FAF006B286D /* Frameworks */,
 				553B76BB1B354FAF006B286D /* Resources */,
+				557A0DDA1CA73C4100B0D60B /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				557A0DD51CA73C4100B0D60B /* PBXTargetDependency */,
 			);
 			name = Html5iOSProjectTemplate;
 			productName = Html5iOSProjectTemplate;
@@ -156,6 +218,23 @@
 			productReference = 553B76D51B354FAF006B286D /* Html5iOSProjectTemplateTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		557A0DC81CA73C4100B0D60B /* TodayWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 557A0DD71CA73C4100B0D60B /* Build configuration list for PBXNativeTarget "TodayWidget" */;
+			buildPhases = (
+				557A0DC51CA73C4100B0D60B /* Sources */,
+				557A0DC61CA73C4100B0D60B /* Frameworks */,
+				557A0DC71CA73C4100B0D60B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TodayWidget;
+			productName = TodayWidget;
+			productReference = 557A0DC91CA73C4100B0D60B /* TodayWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -163,7 +242,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftMigration = 0700;
-				LastSwiftUpdateCheck = 0700;
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Bhuman Soni";
 				TargetAttributes = {
@@ -173,6 +252,9 @@
 					553B76D41B354FAF006B286D = {
 						CreatedOnToolsVersion = 6.3.1;
 						TestTargetID = 553B76BC1B354FAF006B286D;
+					};
+					557A0DC81CA73C4100B0D60B = {
+						CreatedOnToolsVersion = 7.2.1;
 					};
 				};
 			};
@@ -191,6 +273,7 @@
 			targets = (
 				553B76BC1B354FAF006B286D /* Html5iOSProjectTemplate */,
 				553B76D41B354FAF006B286D /* Html5iOSProjectTemplateTests */,
+				557A0DC81CA73C4100B0D60B /* TodayWidget */,
 			);
 		};
 /* End PBXProject section */
@@ -211,6 +294,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		557A0DC71CA73C4100B0D60B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				557A0DDB1CA73C8D00B0D60B /* www in Resources */,
+				557A0DD21CA73C4100B0D60B /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +327,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		557A0DC51CA73C4100B0D60B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				557A0DCF1CA73C4100B0D60B /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -242,6 +342,11 @@
 			isa = PBXTargetDependency;
 			target = 553B76BC1B354FAF006B286D /* Html5iOSProjectTemplate */;
 			targetProxy = 553B76D61B354FAF006B286D /* PBXContainerItemProxy */;
+		};
+		557A0DD51CA73C4100B0D60B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 557A0DC81CA73C4100B0D60B /* TodayWidget */;
+			targetProxy = 557A0DD41CA73C4100B0D60B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -260,6 +365,14 @@
 				553B76CF1B354FAF006B286D /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		557A0DD01CA73C4100B0D60B /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				557A0DD11CA73C4100B0D60B /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -353,6 +466,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Html5iOSProjectTemplate/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -365,6 +480,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Html5iOSProjectTemplate/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -377,6 +494,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -397,6 +515,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -406,6 +525,33 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ptojectTemplate.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Html5iOSProjectTemplate.app/Html5iOSProjectTemplate";
+			};
+			name = Release;
+		};
+		557A0DD81CA73C4100B0D60B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = TodayWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.myFirstTestApplication.Html5iOSProjectTemplate.TodayWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		557A0DD91CA73C4100B0D60B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				INFOPLIST_FILE = TodayWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.myFirstTestApplication.Html5iOSProjectTemplate.TodayWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -435,6 +581,15 @@
 			buildConfigurations = (
 				553B76E31B354FAF006B286D /* Debug */,
 				553B76E41B354FAF006B286D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		557A0DD71CA73C4100B0D60B /* Build configuration list for PBXNativeTarget "TodayWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				557A0DD81CA73C4100B0D60B /* Debug */,
+				557A0DD91CA73C4100B0D60B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
