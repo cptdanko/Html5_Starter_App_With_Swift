@@ -14,9 +14,11 @@ When you run this project in the iOS simulator from Xcode, you will see a tab ba
 - iOS Notifications: this tab has HTML buttons that can schedule, print(to Xcode console) and cancel [local notifications]
 - Html5 Charts: this tab aims to demonstrate how to visualise data using an Html5 charting framework in a native iOS app....or simply put, how to draw Html5 based charts in a native iOS app. The charting library used for visualisation here is [Chartist]. I got to know about it from this excellent SitePoint article on [15 JS libraries for Creating Beautiful Charts]. 
 
+### Today Extension(Widget) 
+A Today Extension is a widget that appears in the pull down menu on iOS. This repo demonstrates how an iOS Today Extension can be powered by Html5 contents by showing a Charts widget for iOS using the charting framework ([Chartist]) used in the Html5 charts tab of this repo.
 ### To be added...
 - Fetching data from a RESTful endpoint natively and displaying it in the WebView i.e. using [NSURLSession]
-- A [Today extension]: Today extension are widgets on the iOS pull-down menu and some sample code for that will be added to this repo to demonstrate how they would work in the context of this repo
+
 Should you have any questions on what's to be added? feel free to contact me or better yet, if you think you can add the above two things to the repo then please do and create a pull request, that would be great!
 
 # Project goal
