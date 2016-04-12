@@ -11,11 +11,12 @@ For this project at this stage the UI contents are powered by the [Ionic framewo
 # What iOS app does this project show?
 When you run this project in the iOS simulator from Xcode, you will see a tab based application which will have the following tabs
 - HTML content: this tab just shows the some HTML elements such as labels and icons obtained from the Ionic Framework
-- iOS Notifications: this tab has HTML buttons that can schedule, print(to Xcode console) and cancel [local notifications]
-- Html5 Charts: this tab aims to demonstrate how to visualise data using an Html5 charting framework in a native iOS app....or simply put, how to draw Html5 based charts in a native iOS app. The charting library used for visualisation here is [Chartist]. I got to know about it from this excellent SitePoint article on [15 JS libraries for Creating Beautiful Charts]. 
+- iOS Notifications: this tab has HTML buttons that can schedule, print(to Xcode console) and cancel [local notifications]. To know more about this feature, you can read the post, [Local notifications in an Html5 powered iOS app(native)].
+- Html5 Charts: this tab aims to demonstrate how to visualise data using an Html5 charting framework in a native iOS app....or simply put, how to draw Html5 based charts in a native iOS app. The charting library used for visualisation here is [Chartist]. I got to know about it from this excellent SitePoint article on [15 JS libraries for Creating Beautiful Charts]. I have written the blog post, [Visualising data in a native iOS app using a Html5 charting library] which provides more details on this feature of the repo.
 
 ### Today Extension(Widget) 
-A Today Extension is a widget that appears in the pull down menu on iOS. This repo demonstrates how an iOS Today Extension can be powered by Html5 contents by showing a Charts widget for iOS using the charting framework ([Chartist]) used in the Html5 charts tab of this repo.
+A Today Extension is a widget that appears in the pull down menu on iOS. This repo demonstrates how an iOS Today Extension can be powered by Html5 contents by showing a Charts widget for iOS using the charting framework ([Chartist]) used in the Html5 charts tab of this repo. The blog post [Html5 powered widget for an iOS app..] provides more details on this.
+
 ### To be added...
 - Fetching data from a RESTful endpoint natively and displaying it in the WebView i.e. using [NSURLSession]
 
@@ -33,6 +34,17 @@ This repo was orginally called [IonicStarterAppWithSwift] and should you want to
 # What changes?
 - **A More appropriate Name**: When I first created the project I named it based on the [HTML5] framework that I was using i.e. [Ionic framework], I have since realised that this project is framework agnostic. What? what I mean is, you can pretty much use any framework to power the HTML contents for the iOS app created with this project. So the name [HTML5] starter app with Swift seemed more appropriate. I first realised that this Xcode project can be used with any HTML5 framework, when I got a [message], about how using this project helped get a rejected(iOS app store) PhoneGap app, pass the app store review process. The rejected [PhoneGap] app was actually built using [JQuery mobile] and on realising that, I was like hmmm, any HTML5 framework can be used for this, huh!
 - **Reduce complexity**: Originally for this repo, I had a seperate branch to show how to schedule local notifications i.e. using [UILocalNotifications]. I realised that it was not very efficient...so this project shows a tab based app and one of the tabs provides the feature to schedule local notifications. This [post], describes the solution for how the app schedules [local notifications].
+
+# Do you find this repo useful?
+If you find this repo useful and wish to support me, you can do so by buying my app, [My Day Todos] or download the [Lite] (free) version and tell me what you think. Would love to get some feedback.
+
+[Lite]: https://itunes.apple.com/us/app/my-day-todos-lite-todolist/id1066820078?mt=8
+
+[Html5 powered widget for an iOS app..]: http://captaindanko.blogspot.com.au/2016/03/html5-based-widget-for-ios-app-today.html
+
+[Visualising data in a native iOS app using a Html5 charting library]: http://captaindanko.blogspot.com.au/2015/11/visualising-data-in-native-ios-app.html
+
+[Local notifications in an Html5 powered iOS app(native)]: http://captaindanko.blogspot.com.au/2015/02/local-notifications-in-ios7-compliant.html
 
 [Today extension]: https://developer.apple.com/library/ios/documentation/General/Conceptual/ExtensibilityPG/NotificationCenter.html
 [NSURLSession]:https://developer.apple.com/library/ios/documentation/Foundation/Reference/NSURLSession_class/
