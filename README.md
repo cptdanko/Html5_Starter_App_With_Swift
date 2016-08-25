@@ -1,4 +1,4 @@
-Html5 starter app with Swift
+Html5 starter app with Swift (Swift 3 support to be added soon)
 ========================
 This is an [Xcode] project that builds an [iOS] app such that all the [UI] for the app is powered by HTML elements that communicate with a [Swift] backend.
 
