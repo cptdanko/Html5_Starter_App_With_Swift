@@ -71,10 +71,25 @@ class ViewController: UIViewController, UIWebViewDelegate{
         } else if path == "printNotificationsToConsole" {
             printNotifications()
             return false
+        } else if path == "shareContent" {
+            share()
         }
         return true
     }
-    
+    func share() {
+        let sharingContent = "For this example, let's just use some simple text.\nHtml5StarterAppWithSwift ROCKS!!!!!!"
+        let activityViewController = UIActivityViewController(activityItems: [sharingContent], applicationActivities: nil)
+        let excludeActivities = [
+            UIActivityTypeAssignToContact,
+            UIActivityTypeSaveToCameraRoll,
+            UIActivityTypeAddToReadingList,
+            UIActivityTypePostToFacebook,
+            UIActivityTypePostToVimeo,
+            UIActivityTypePostToFlickr
+        ]
+        activityViewController.excludedActivityTypes = excludeActivities
+        presentViewController(activityViewController, animated: true, completion: nil)
+    }
     func webViewDidStartLoad(webView: UIWebView) {
     }
     

@@ -21,4 +21,7 @@ angular.module('starter.controllers', [])
 	new Chartist.Bar('.ct-chart', data, options);
 })
 .controller('HtmlContentCtrl', function($scope) {
+    $scope.share = function() {
+        window.location = "shareContent";
+    }
 });
