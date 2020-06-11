@@ -15,10 +15,10 @@ class TodayViewController: UIViewController, NCWidgetProviding, UIWebViewDelegat
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let path = NSBundle.mainBundle().pathForResource("widget", ofType: "html", inDirectory:"www")
+        let path = Bundle.main.path(forResource: "widget", ofType: "html", inDirectory:"www")
         let url = NSURL(string: path!)
-        let request = NSURLRequest(URL: url!)
-        webView.loadRequest(request)
+        let request = NSURLRequest(url: url! as URL)
+        webView.loadRequest(request as URLRequest)
         
         self.webView.delegate = self
     }
@@ -39,7 +39,7 @@ class TodayViewController: UIViewController, NCWidgetProviding, UIWebViewDelegat
         // If there's no update required, use NCUpdateResult.NoData
         // If there's an update, use NCUpdateResult.NewData
 
-        completionHandler(NCUpdateResult.NewData)
+        completionHandler(NCUpdateResult.newData)
     }
     
 }

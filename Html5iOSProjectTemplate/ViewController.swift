@@ -8,44 +8,45 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIWebViewDelegate{
+class ViewController: UIViewController, UIWebViewDelegate {
 
     @IBOutlet var webView: UIWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let path = NSBundle.mainBundle().pathForResource("index", ofType: "html", inDirectory:"www")
+        let path = Bundle.main.path(forResource: "index", ofType: "html", inDirectory:"www")
         let url = NSURL(string: path!)
-        let request = NSURLRequest(URL: url!)
-        webView.loadRequest(request)
         
-        self.webView.delegate = self
+        let request = URLRequest(url: url! as URL)
+        webView.loadRequest(request)
+        webView.delegate = self
+        
+        //check the current user notification settings type
+        
+        guard let settings = UIApplication.shared.currentUserNotificationSettings else { return }
+        if settings.types == UIUserNotificationType() {
+            UIApplication.shared.registerUserNotificationSettings(UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil))
+        }
     }
     private func cancelNotifications(){
-        UIApplication.sharedApplication().cancelAllLocalNotifications()
-        /*
-        below is the code for cancelling specific notifications
-        for n:AnyObject in UIApplication.sharedApplication().scheduledLocalNotifications {
-            let not:UILocalNotification = n as UILocalNotification
-            let alertBody = not.alertBody!
-            if alertBody == "3" {
-                UIApplication.sharedApplication().cancelLocalNotification(not)
-            }
-        }*/
+        UIApplication.shared.cancelAllLocalNotifications()
     }
-    private func printNotifications(){
-        for n:AnyObject in UIApplication.sharedApplication().scheduledLocalNotifications! {
-            let not:UILocalNotification = n as! UILocalNotification
-            print("alertBody:\(not.alertBody!)")
+    private func printScheduledNotifications(){
+        guard let notifications = UIApplication.shared.scheduledLocalNotifications else {
+            return
+        }
+        
+        for notification in notifications{
+            print("alertBody:\( notification.alertBody!)")
         }
     }
     private func setTestNotifications(){
         let date = NSDate()
-        scheduleNotifications(date.dateByAddingTimeInterval(100), message: "1")
-        scheduleNotifications(date.dateByAddingTimeInterval(10), message: "2")
-        scheduleNotifications(date.dateByAddingTimeInterval(20), message: "3")
-        scheduleNotifications(date.dateByAddingTimeInterval(30), message: "4")
-        scheduleNotifications(date.dateByAddingTimeInterval(60), message: "5")
+        scheduleNotifications(date: date.addingTimeInterval(100), message: "1")
+        scheduleNotifications(date: date.addingTimeInterval(10), message: "2")
+        scheduleNotifications(date: date.addingTimeInterval(20), message: "3")
+        scheduleNotifications(date: date.addingTimeInterval(30), message: "4")
+        scheduleNotifications(date: date.addingTimeInterval(60), message: "5")
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -53,25 +54,17 @@ class ViewController: UIViewController, UIWebViewDelegate{
     }
     func scheduleNotifications(date: NSDate, message: String) {
         let notification:UILocalNotification = UILocalNotification()
-        notification.fireDate = date
-        notification.timeZone = NSTimeZone.defaultTimeZone()
-        notification.fireDate = date
+        notification.fireDate = date as Date
+        notification.timeZone = NSTimeZone.default
+        notification.fireDate = date as Date
         notification.soundName = UILocalNotificationDefaultSoundName
         notification.alertBody = message
-        UIApplication.sharedApplication().scheduleLocalNotification(notification)
+        UIApplication.shared.scheduleLocalNotification(notification)
     }
-    func webView(webView: UIWebView, shouldStartLoadWithRequest request: NSURLRequest, navigationType: UIWebViewNavigationType) -> Bool {
-        let path = request.URL!.lastPathComponent
-        if path == "setNotifications" {
-            setTestNotifications()
-            return false
-        } else if path == "cancelAllNotifications" {
-            cancelNotifications()
-            return false
-        } else if path == "printNotificationsToConsole" {
-            printNotifications()
-            return false
-        } else if path == "shareContent" {
+    // MARK: WebView delegate methods
+    func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebView.NavigationType) -> Bool {
+        let path = request.url!.lastPathComponent
+        if path == "shareContent" {
             share()
         }
         return true
@@ -80,22 +73,15 @@ class ViewController: UIViewController, UIWebViewDelegate{
         let sharingContent = "For this example, let's just use some simple text.\nHtml5StarterAppWithSwift ROCKS!!!!!!"
         let activityViewController = UIActivityViewController(activityItems: [sharingContent], applicationActivities: nil)
         let excludeActivities = [
-            UIActivityTypeAssignToContact,
-            UIActivityTypeSaveToCameraRoll,
-            UIActivityTypeAddToReadingList,
-            UIActivityTypePostToFacebook,
-            UIActivityTypePostToVimeo,
-            UIActivityTypePostToFlickr
+            UIActivity.ActivityType.assignToContact,
+            UIActivity.ActivityType.saveToCameraRoll,
+            UIActivity.ActivityType.addToReadingList,
+            UIActivity.ActivityType.postToFacebook,
+            UIActivity.ActivityType.postToVimeo,
+            UIActivity.ActivityType.postToFlickr
         ]
         activityViewController.excludedActivityTypes = excludeActivities
-        presentViewController(activityViewController, animated: true, completion: nil)
+        present(activityViewController, animated: true, completion: nil)
     }
-    func webViewDidStartLoad(webView: UIWebView) {
-    }
-    
-    func webViewDidFinishLoad(webView: UIWebView) {
-        
-    }
-
 }
 
