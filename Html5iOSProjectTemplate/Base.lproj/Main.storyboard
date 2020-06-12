@@ -18,23 +18,8 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SvQ-3s-0RI">
-                                <rect key="frame" x="0.0" y="59" width="414" height="803"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </webView>
-                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="SvQ-3s-0RI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="15" id="QDk-gC-4Di"/>
-                            <constraint firstItem="SvQ-3s-0RI" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="a5i-Z1-n7f"/>
-                            <constraint firstAttribute="trailing" secondItem="SvQ-3s-0RI" secondAttribute="trailing" id="gpK-o1-D0b"/>
-                            <constraint firstItem="SvQ-3s-0RI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="okN-jg-ILj"/>
-                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="webView" destination="SvQ-3s-0RI" id="QcF-i8-zCR"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

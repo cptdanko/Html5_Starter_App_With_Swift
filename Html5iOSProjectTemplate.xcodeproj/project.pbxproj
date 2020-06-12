@@ -14,12 +14,11 @@
 		553B76CD1B354FAF006B286D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 553B76CC1B354FAF006B286D /* Images.xcassets */; };
 		553B76D01B354FAF006B286D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 553B76CE1B354FAF006B286D /* LaunchScreen.xib */; };
 		553B76DC1B354FAF006B286D /* Html5iOSProjectTemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553B76DB1B354FAF006B286D /* Html5iOSProjectTemplateTests.swift */; };
-		553B77171B3550FA006B286D /* www in Resources */ = {isa = PBXBuildFile; fileRef = 553B77161B3550FA006B286D /* www */; };
 		557A0DCC1CA73C4100B0D60B /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 557A0DCB1CA73C4100B0D60B /* NotificationCenter.framework */; };
 		557A0DCF1CA73C4100B0D60B /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A0DCE1CA73C4100B0D60B /* TodayViewController.swift */; };
 		557A0DD21CA73C4100B0D60B /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 557A0DD01CA73C4100B0D60B /* MainInterface.storyboard */; };
 		557A0DD61CA73C4100B0D60B /* TodayWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 557A0DC91CA73C4100B0D60B /* TodayWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		557A0DDB1CA73C8D00B0D60B /* www in Resources */ = {isa = PBXBuildFile; fileRef = 553B77161B3550FA006B286D /* www */; };
+		C6B1FB7D2492F54900596B4F /* webStuff in Resources */ = {isa = PBXBuildFile; fileRef = C6B1FB7C2492F54900596B4F /* webStuff */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,12 +64,12 @@
 		553B76D51B354FAF006B286D /* Html5iOSProjectTemplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Html5iOSProjectTemplateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		553B76DA1B354FAF006B286D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		553B76DB1B354FAF006B286D /* Html5iOSProjectTemplateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Html5iOSProjectTemplateTests.swift; sourceTree = "<group>"; };
-		553B77161B3550FA006B286D /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = Html5iOSProjectTemplate/www; sourceTree = "<group>"; };
 		557A0DC91CA73C4100B0D60B /* TodayWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TodayWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		557A0DCB1CA73C4100B0D60B /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		557A0DCE1CA73C4100B0D60B /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		557A0DD11CA73C4100B0D60B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		557A0DD31CA73C4100B0D60B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6B1FB7C2492F54900596B4F /* webStuff */ = {isa = PBXFileReference; lastKnownFileType = folder; path = webStuff; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +101,6 @@
 		553B76B41B354FAE006B286D = {
 			isa = PBXGroup;
 			children = (
-				553B77161B3550FA006B286D /* www */,
 				553B76BF1B354FAF006B286D /* Html5iOSProjectTemplate */,
 				553B76D81B354FAF006B286D /* Html5iOSProjectTemplateTests */,
 				557A0DCD1CA73C4100B0D60B /* TodayWidget */,
@@ -124,6 +122,7 @@
 		553B76BF1B354FAF006B286D /* Html5iOSProjectTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				C6B1FB7C2492F54900596B4F /* webStuff */,
 				553B76C21B354FAF006B286D /* AppDelegate.swift */,
 				553B76C71B354FAF006B286D /* ViewController.swift */,
 				553B76C91B354FAF006B286D /* Main.storyboard */,
@@ -283,7 +282,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				553B77171B3550FA006B286D /* www in Resources */,
+				C6B1FB7D2492F54900596B4F /* webStuff in Resources */,
 				553B76CB1B354FAF006B286D /* Main.storyboard in Resources */,
 				553B76D01B354FAF006B286D /* LaunchScreen.xib in Resources */,
 				553B76CD1B354FAF006B286D /* Images.xcassets in Resources */,
@@ -301,7 +300,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				557A0DDB1CA73C8D00B0D60B /* www in Resources */,
 				557A0DD21CA73C4100B0D60B /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
