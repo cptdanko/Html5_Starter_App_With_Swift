@@ -1,0 +1,36 @@
+.mainView {
+	margin-left: auto;
+    margin-right: auto;
+    height: 50%;
+    background-color: blanchedalmond;
+    border-radius: 40px;
+    padding: 20px;
+}
+.minMaxTemp {
+	margin-top:5px;
+	font-size:20px
+}
+.currentTemp {
+	margin-left:15px;
+	margin-top:10px;
+	font-size:xx-large;
+}
+.buttons {
+	display: flex;
+	flex-direction: row;
+}
+.button {
+	border-radius: 10px;
+	background-color: #3e8e41;
+	padding: 5px;
+	margin: 5px;
+	color: #fff;
+	box-shadow: 0 9px #999;	
+	font-size: 16px;
+	font-style: bold;
+}
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}

@@ -1,4 +1,3 @@
-
 function callSwiftWithJSON() {
     var json = {
         "name": "Bhuman",
@@ -29,4 +28,30 @@ function updateTitle() {
  */
 function updateWeather(data) {
     //to be implemented
+}
+/*
+ A function to fetch some data using a Xhttp request and send it back
+ to the Swift backend.
+ 
+ */
+function makeXhttpRequest() {
+    var quizUrl = "https://opentdb.com/api.php?amount=5";
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", quizUrl, true);
+    xhr.onload = function (e) {
+      if (xhr.readyState === 4) {
+        if (xhr.status === 200) {
+            //console.log(xhr.responseText);
+            webkit.messageHandlers.quizDataFromAPI.postMessage(xhr.responseText);
+            console.log("sent the messsge to the backend");
+        } else {
+          console.error(xhr.statusText);
+        }
+      }
+    };
+    xhr.onerror = function (e) {
+      console.error(xhr.statusText);
+    };
+    xhr.send(null);
+    
 }

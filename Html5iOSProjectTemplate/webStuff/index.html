@@ -1,23 +1,28 @@
 <html>
 	<head>
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-		<link rel="stylesheet" href="animate.css">
+		<link rel="stylesheet" href="index.css">
         <script src="demo.js"> </script>
 	</head>
 	<body>
-        <h1> Welcome to Sydney </h1>
-		<div class="disappearClass"> 
-			<div style="margin-top:5px;font-size:20px">18 </div>
-			<div style="margin-left:15px;
-						margin-top:10px;
-						font-size:xx-large;">22&deg;C </div>
-			<div style="margin-top:10px;font-size:20px">25 </div>
-		</div>
-        <div>
-            <button onclick="callSwiftWithJSON()"> Call Swift Backend </button>
-        </div>
-        <div>
-            <button onclick="shareContent()"> Share From HTML </button>
-        </div>
+		<div class="mainView">
+	        <h1> Welcome to Sydney </h1>
+			<div> 
+				<div class="minMaxTemp">18 </div>
+				<div class="currentTemp">22&deg;C </div>
+				<div class="minMaxTemp">25 </div>
+			</div>
+			<div class="buttons">
+		        <div>
+		            <button class="button" onclick="callSwiftWithJSON()"> Call Swift Backend </button>
+		        </div>
+		        <div>
+		            <button class="button" onclick="makeXhttpRequest();"> Call Quiz API </button>
+		        </div>
+		        <div>
+		            <button class="button" onclick="shareContent();"> iOS Share Dialog </button>
+		        </div>
+	    	</div>
+    	</div>
 	</body>
 </html>

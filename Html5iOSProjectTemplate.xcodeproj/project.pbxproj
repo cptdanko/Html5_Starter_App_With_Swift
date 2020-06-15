@@ -18,6 +18,7 @@
 		557A0DCF1CA73C4100B0D60B /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557A0DCE1CA73C4100B0D60B /* TodayViewController.swift */; };
 		557A0DD21CA73C4100B0D60B /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 557A0DD01CA73C4100B0D60B /* MainInterface.storyboard */; };
 		557A0DD61CA73C4100B0D60B /* TodayWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 557A0DC91CA73C4100B0D60B /* TodayWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C66475B42497B2EF003E9256 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66475B32497B2EF003E9256 /* Quiz.swift */; };
 		C6B1FB7D2492F54900596B4F /* webStuff in Resources */ = {isa = PBXBuildFile; fileRef = C6B1FB7C2492F54900596B4F /* webStuff */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +70,7 @@
 		557A0DCE1CA73C4100B0D60B /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		557A0DD11CA73C4100B0D60B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		557A0DD31CA73C4100B0D60B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C66475B32497B2EF003E9256 /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 		C6B1FB7C2492F54900596B4F /* webStuff */ = {isa = PBXFileReference; lastKnownFileType = folder; path = webStuff; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,6 +124,7 @@
 		553B76BF1B354FAF006B286D /* Html5iOSProjectTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				C66475B22497B2DD003E9256 /* Models */,
 				C6B1FB7C2492F54900596B4F /* webStuff */,
 				553B76C21B354FAF006B286D /* AppDelegate.swift */,
 				553B76C71B354FAF006B286D /* ViewController.swift */,
@@ -175,6 +178,14 @@
 				557A0DD31CA73C4100B0D60B /* Info.plist */,
 			);
 			path = TodayWidget;
+			sourceTree = "<group>";
+		};
+		C66475B22497B2DD003E9256 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C66475B32497B2EF003E9256 /* Quiz.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,6 +324,7 @@
 			files = (
 				553B76C81B354FAF006B286D /* ViewController.swift in Sources */,
 				553B76C61B354FAF006B286D /* Html5iOSProjectTemplate.xcdatamodeld in Sources */,
+				C66475B42497B2EF003E9256 /* Quiz.swift in Sources */,
 				553B76C31B354FAF006B286D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

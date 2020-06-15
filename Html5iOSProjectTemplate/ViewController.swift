@@ -27,6 +27,7 @@ class ViewController: UIViewController, UIWebViewDelegate {
        
         contentController.add(self, name: "swiftCall")
         contentController.add(self, name: "shareFromHTML")
+        contentController.add(self, name: "quizDataFromAPI")
         
         let webViewConfig = WKWebViewConfiguration()
         webViewConfig.userContentController = contentController
@@ -64,6 +65,22 @@ extension ViewController: WKScriptMessageHandler {
             ]
             activityViewController.excludedActivityTypes = excludeActivities
             present(activityViewController, animated: true, completion: nil)
+        } else if message.name == "quizDataFromAPI" {
+            guard let messageStr = message.body as? String else {
+                return
+            }
+            let decoder = JSONDecoder()
+            /*
+             From the web front-end, we query an external API using
+             XMLHttpRequest and send the data back to Swift. Here we can parse
+             it using Swift backend. Just added here for debugging purposes
+             */
+            do{
+                let quizData = try decoder.decode(Quiz.self, from: messageStr.data(using: .utf8)!)
+                quizData.printDataToConsole()
+            } catch _ {
+                //error handling to be added?. not important for this repo at this stasge
+            }
         }
     }
 }
