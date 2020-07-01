@@ -12,6 +12,7 @@ import WebKit
 class ViewController: UIViewController, UIWebViewDelegate {
 
     var webView:WKWebView!
+    let actionFactory = ActionFactory()
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -46,41 +47,10 @@ class ViewController: UIViewController, UIWebViewDelegate {
 
 extension ViewController: WKScriptMessageHandler {
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
-        if  message.name == "swiftCall" {
-            print(message.body)
-        } else if message.name == "shareFromHTML" {
-            guard let messageBody = message.body as? [String: Any] else {
-                return
-            }
-            let task = messageBody["task"] as! String
-            let time = messageBody["time"] as! String
-            let activityViewController = UIActivityViewController(activityItems: ["\(task) at \(time)"], applicationActivities: nil)
-            let excludeActivities = [
-                UIActivity.ActivityType.assignToContact,
-                UIActivity.ActivityType.saveToCameraRoll,
-                UIActivity.ActivityType.addToReadingList,
-                UIActivity.ActivityType.postToFacebook,
-                UIActivity.ActivityType.postToVimeo,
-                UIActivity.ActivityType.postToFlickr
-            ]
-            activityViewController.excludedActivityTypes = excludeActivities
-            present(activityViewController, animated: true, completion: nil)
-        } else if message.name == "quizDataFromAPI" {
-            guard let messageStr = message.body as? String else {
-                return
-            }
-            let decoder = JSONDecoder()
-            /*
-             From the web front-end, we query an external API using
-             XMLHttpRequest and send the data back to Swift. Here we can parse
-             it using Swift backend. Just added here for debugging purposes
-             */
-            do{
-                let quizData = try decoder.decode(Quiz.self, from: messageStr.data(using: .utf8)!)
-                quizData.printDataToConsole()
-            } catch _ {
-                //error handling to be added?. not important for this repo at this stasge
-            }
+        guard let action = actionFactory.getAction(key: message.name) else {
+            print("Cannot find the action! Are you sure you are asking for the right thing?")
+            return 
         }
+        action.processAction(message: message, viewController: self)
     }
 }
