@@ -5,7 +5,7 @@ This project came to be when I was working on my first iOS app; [My Day Todos], 
 The motivation behind this is,
 - to serve as an easier transition into the iOS development for those coming from a Java full stack development background
 - demonstrate an app with a HTML5 powered UI that can potentially use native platform capabilities that may not be there from other hybrid approaches
-- to show, that for a large app, an organisation can have a front-end engineer the UI and an iOS engineer can build a native iOS backend as opposed to having 2 iOS engineers
+- to show, that an organisation with a large web app can reduce their development time by reusing a majority of their existing code and have their existing front-end engineers maintain the UI in iOS apps. With this approach, they would only need to hire half the no of iOS engineers opposed to building a fully native iOS app
 - to showcase, how you can leverage CSS transisitions in a native iOS app
 
 # What does it show right now?
