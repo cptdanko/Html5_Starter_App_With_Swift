@@ -88,6 +88,15 @@ In addition to having a background in computer science research, I am also a Jav
 
 Hope this repository helps you, fork the repo or add it to your favourite if it does.
 
+# More great tutorials and code samples
+Checkout [this blog] for more "how-to" code samples, tutorials and just info on how to solve problems.
+
+If you like what I am doing, you can [buy me a coffee]
+
+Click on the next link for more info on the 13+ year [software engineering career journey] of the author.
+
+[buy me a coffee]: https://www.buymeacoffee.com/bhumansoni
+
 [Lite]: https://itunes.apple.com/us/app/my-day-todos-lite-todolist/id1066820078?mt=8
 
 [Html5 powered widget for an iOS app..]: http://captaindanko.blogspot.com.au/2016/03/html5-based-widget-for-ios-app-today.html
