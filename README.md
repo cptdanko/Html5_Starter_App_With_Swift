@@ -95,6 +95,7 @@ If you like what I am doing, you can [buy me a coffee]
 
 Click on the next link for more info on the 13+ year [software engineering career journey] of the author.
 
+[this blog]: https://mydaytodo.com/blog/
 [buy me a coffee]: https://www.buymeacoffee.com/bhumansoni
 
 [Lite]: https://itunes.apple.com/us/app/my-day-todos-lite-todolist/id1066820078?mt=8
